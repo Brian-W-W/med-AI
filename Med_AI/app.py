@@ -82,7 +82,7 @@ def get_predicted_value(patient_symptoms):
 
 
 
-
+@app.route('/')
 @app.route('/login', methods=['GET','POST'])
 def login():
     msg = ''
@@ -115,7 +115,7 @@ def logout():
 def home():
     return render_template('home.html')
 
-@app.route('/')
+
 @app.route('/register', methods = ['GET', 'POST'])
 def register():
     msg = ''
